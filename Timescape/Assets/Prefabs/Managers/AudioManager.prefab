@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2664042558487884132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3930207637709253882}
+  - component: {fileID: 1987076051464842083}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3930207637709253882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2664042558487884132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987076051464842083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2664042558487884132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1557e4f9cea4d4c8270ecd5a91520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: MenuMusic
+    clip: {fileID: 8300000, guid: b623c9fbc4db760468e65bcf04001627, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.308
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Level1
+    clip: {fileID: 8300000, guid: 1d458e057eb834946970518c5db28624, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.524
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: WinMusic
+    clip: {fileID: 8300000, guid: 81fb690f88e218f498c4dca0f6d92dd1, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.524
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: LoseMusic
+    clip: {fileID: 8300000, guid: 2d0360cbe43e2514a9495232d9804794, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.524
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
