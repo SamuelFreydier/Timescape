@@ -7,7 +7,7 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] Animation _playerUIAnimator;
     [SerializeField] AnimationClip _fadeOutAnimationClip;
     [SerializeField] AnimationClip _fadeInAnimationClip;
-    [SerializeField] private GameObject _scrollPanel;
+    public GameObject _scrollPanel;
     public Events.EventFadeComplete OnUIFadeComplete;
 
     private void Start()

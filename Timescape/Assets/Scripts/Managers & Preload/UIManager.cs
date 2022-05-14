@@ -134,7 +134,14 @@ public class UIManager : Singleton<UIManager> //Manager pour l'UI en général
         _dummyCamera.gameObject.SetActive(active);
     }
 
-
+    public void OpenScroll(string title, string text)
+    {
+        GameObject scroll = _uiMenu._scrollPanel;
+        scroll.SetActive(true);
+        scroll.GetComponent<Parchemin>().UpdateScroll(title, text);
+        Time.timeScale = 0f;
+    }
+    
     IEnumerator WaitAfterClick()
     {
         _waitAfterClick = true;

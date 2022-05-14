@@ -1,21 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Parchemin : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI scrollTitle;
     public TMPro.TextMeshProUGUI scrollText;
+    public Button closeBtn;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        closeBtn.onClick.AddListener(CloseScroll);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateScroll(string title, string text)
     {
-        
+        scrollTitle.text = title;
+        scrollText.text = text;
+    }
+
+    private void CloseScroll()
+    {
+        Time.timeScale = 1f;
+        gameObject.SetActive(false);
     }
 }
