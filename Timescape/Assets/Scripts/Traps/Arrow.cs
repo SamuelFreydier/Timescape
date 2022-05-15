@@ -15,6 +15,10 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
+        if(direction == -1)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
         rb.velocity = new Vector2(arrowSpeed * direction, 0);
     }
 

@@ -26,14 +26,14 @@ public class PlayerMovement : MonoBehaviour
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;  //Il se déplace en fonction de l'input horizontal et de sa vitesse
             animator.SetFloat("Speed", Mathf.Abs(horizontalMove)); //Mise à jour de la valeur speed pour l'animation de Run
 
-            //animator.SetFloat("VerticalVelocity", controller.m_Rigidbody2D.velocity.y); //Mise à jour de la verticalvelocity pour animer le Jump Blend Tree
+            animator.SetFloat("VerticalVelocity", controller.m_Rigidbody2D.velocity.y); //Mise à jour de la verticalvelocity pour animer le Jump Blend Tree
 
             if (Input.GetButtonDown("Jump")) //Si on appuie sur le bouton pour sauter, le booléen passe à vrai
             {
                 jump = true;
             }
 
-            //animator.SetBool("isGrounded", controller.m_Grounded); //Le booléen de l'animator = le booléen du controller qui permet de savoir si le joueur est au sol
+            animator.SetBool("isGrounded", controller.m_Grounded); //Le booléen de l'animator = le booléen du controller qui permet de savoir si le joueur est au sol
         }
         else
         {

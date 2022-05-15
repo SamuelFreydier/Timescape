@@ -8,6 +8,7 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] AnimationClip _fadeOutAnimationClip;
     [SerializeField] AnimationClip _fadeInAnimationClip;
     public GameObject _scrollPanel;
+    public Image spellCooldown;
     public Events.EventFadeComplete OnUIFadeComplete;
 
     private void Start()

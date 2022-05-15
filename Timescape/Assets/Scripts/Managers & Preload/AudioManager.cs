@@ -65,7 +65,10 @@ public class AudioManager : Singleton<AudioManager> //Manager gérant les sons, m
         {
             Debug.LogWarning("Sound : " + name + " not found !");
         }
-        s.source.Stop();
+        if(s.source.isPlaying)
+        {
+            s.source.Stop();
+        }
     }
     private void PlayMusicHandler(string levelname) //Lance la musique du level courant
     {

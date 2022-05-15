@@ -46,16 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: MenuMusic
-    clip: {fileID: 8300000, guid: b623c9fbc4db760468e65bcf04001627, type: 3}
+    clip: {fileID: 8300000, guid: 0596d6e4e142e734c98c88e20181e159, type: 3}
     group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
-    volume: 0.308
+    volume: 0.366
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Level1
-    clip: {fileID: 8300000, guid: 1d458e057eb834946970518c5db28624, type: 3}
+    clip: {fileID: 8300000, guid: fe751acafc952ea40ba79568f7fafe82, type: 3}
     group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
-    volume: 0.524
+    volume: 0.511
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -72,4 +72,25 @@ MonoBehaviour:
     volume: 0.524
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Teleportation
+    clip: {fileID: 8300000, guid: 8cbed8de1b63bee46a6fc5e0db20f39d, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TPLoop
+    clip: {fileID: 8300000, guid: b62519cfa31a7c64987687d60bac4a98, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Scroll
+    clip: {fileID: 8300000, guid: ef42516462090014aa457ad0f8421360, type: 3}
+    group: {fileID: 24300002, guid: 90a2dd14e53ac9e4e923d83f55ddf1ed, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
     source: {fileID: 0}

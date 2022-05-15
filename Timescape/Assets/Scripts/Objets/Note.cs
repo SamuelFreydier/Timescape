@@ -9,7 +9,7 @@ public class Note : MonoBehaviour
     [TextArea(4,8)]
     public string text;
     public GameObject CIcon;
-    private bool canRead = false;
+    [HideInInspector] public bool canRead = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,6 +35,7 @@ public class Note : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.C))
             {
+                AudioManager.Instance.InstantPlay("Scroll", 1f);
                 UIManager.Instance.OpenScroll(title, text);
             }
         }

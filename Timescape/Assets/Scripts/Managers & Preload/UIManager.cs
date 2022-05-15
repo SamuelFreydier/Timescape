@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 #pragma warning disable 0649
 public class UIManager : Singleton<UIManager> //Manager pour l'UI en général
 {
@@ -142,6 +143,12 @@ public class UIManager : Singleton<UIManager> //Manager pour l'UI en général
         Time.timeScale = 0f;
     }
     
+    public void UpdateCooldown(float fillAmount)
+    {
+        Image cooldownImage = _uiMenu.spellCooldown;
+        cooldownImage.fillAmount = fillAmount;
+    }
+
     IEnumerator WaitAfterClick()
     {
         _waitAfterClick = true;
